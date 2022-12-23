@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="21507" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38"/>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="21501"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="aware_client_storyboard_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label width="130" height="11" alignment="left" text="Label" minimumScaleFactor="0.90000000000000002" id="n33-Ly-BRV">
+                            <fontDescription key="font" type="system" pointSize="11"/>
+                        </label>
+                        <label width="136" height="15" alignment="left" text="データ収集　動作中" id="gbc-no-Uwo">
+                            <fontDescription key="font" style="UICTFontTextStyleBody"/>
+                        </label>
+                        <label width="134" height="13" alignment="left" text="Last Sync:" minimumScaleFactor="0.90000000000000002" id="aad-Tc-OY8">
+                            <fontDescription key="font" style="UICTFontTextStyleBody"/>
+                        </label>
+                        <label width="41" height="16" alignment="left" text="Label" id="bt5-gq-6qH"/>
+                        <button width="1" alignment="left" title="データ強制送信" id="2L0-Ze-Flp">
+                            <fontDescription key="font" type="system" pointSize="15"/>
+                            <connections>
+                                <action selector="pushedSyncButton" destination="AgC-eL-Hgc" id="Jnk-fG-BRz"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="現在の心拍数" id="MRO-B5-Qiv">
+                            <connections>
+                                <segue destination="Yvb-UM-Bbn" kind="push" id="jU9-vG-bg2"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="lastSyncLabel" destination="bt5-gq-6qH" id="f2H-eW-gL2"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="220" y="343"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" numberOfLines="0" id="IdU-wH-bcW"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                        <segue destination="eXb-UN-Cd0" kind="relationship" relationship="dynamicInteractiveNotificationInterface" id="mpB-YA-K8N"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="460" y="715"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="ZPc-GJ-vnh">
+            <objects>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="aware_client_storyboard_WatchKit_App" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="949" y="856"/>
+        </scene>
+        <!--heart-->
+        <scene sceneID="dlF-FQ-VaU">
+            <objects>
+                <controller backgroundImage="heart" catalog="system" spacing="0.0" id="Yvb-UM-Bbn" customClass="PracticeController" customModule="aware_client_storyboard_WatchKit_Extension">
+                    <items>
+                        <label width="74" height="23" alignment="center" verticalAlignment="center" text="最新：" id="Bpa-44-ASA"/>
+                    </items>
+                    <connections>
+                        <outlet property="labelHeartRateLatest" destination="Bpa-44-ASA" id="JjB-U4-tmh"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="528" y="345"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="Niz-AI-uX2">
+            <objects>
+                <controller id="eXb-UN-Cd0" customClass="NotificationController" customModule="aware_client_storyboard_WatchKit_App" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="942" y="537"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="heart" catalog="system" width="128" height="105"/>
+    </resources>
+</document>

@@ -1,0 +1,608 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		482FC41C2944B3A60072A001 /* PracticeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482FC41B2944B3A60072A001 /* PracticeController.swift */; };
+		484AA42E2934A0F300676C11 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484AA42D2934A0F300676C11 /* AppDelegate.swift */; };
+		484AA4302934A0F300676C11 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484AA42F2934A0F300676C11 /* SceneDelegate.swift */; };
+		484AA4322934A0F300676C11 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484AA4312934A0F300676C11 /* ViewController.swift */; };
+		484AA4352934A0F300676C11 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 484AA4332934A0F300676C11 /* Main.storyboard */; };
+		484AA4372934A0F800676C11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 484AA4362934A0F800676C11 /* Assets.xcassets */; };
+		484AA43A2934A0F800676C11 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 484AA4382934A0F800676C11 /* LaunchScreen.storyboard */; };
+		484AA4452934A0F800676C11 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 484AA4432934A0F800676C11 /* Interface.storyboard */; };
+		484AA4472934A0F900676C11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 484AA4462934A0F900676C11 /* Assets.xcassets */; };
+		484AA4522934A0F900676C11 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484AA4512934A0F900676C11 /* InterfaceController.swift */; };
+		484AA4542934A0F900676C11 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484AA4532934A0F900676C11 /* ExtensionDelegate.swift */; };
+		484AA4562934A0F900676C11 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484AA4552934A0F900676C11 /* NotificationController.swift */; };
+		484AA4582934A0F900676C11 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484AA4572934A0F900676C11 /* ComplicationController.swift */; };
+		484AA45A2934A0FB00676C11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 484AA4592934A0FB00676C11 /* Assets.xcassets */; };
+		484AA46B293719DA00676C11 /* SensorData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484AA46A293719DA00676C11 /* SensorData.swift */; };
+		48B4BB162953209F00180BA1 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48B4BB152953209F00180BA1 /* HealthKit.framework */; };
+		48B4BB1929532CEA00180BA1 /* aware-client.storyboard WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = 484AA43E2934A0F800676C11 /* aware-client.storyboard WatchKit App.app */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		484AA4402934A0F800676C11 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 484AA4222934A0F200676C11 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 484AA43D2934A0F800676C11;
+			remoteInfo = "aware-client.storyboard WatchKit App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		484AA4662934A0FB00676C11 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		482FC41B2944B3A60072A001 /* PracticeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeController.swift; sourceTree = "<group>"; };
+		484AA42A2934A0F300676C11 /* aware-client.storyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "aware-client.storyboard.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		484AA42D2934A0F300676C11 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		484AA42F2934A0F300676C11 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		484AA4312934A0F300676C11 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		484AA4342934A0F300676C11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		484AA4362934A0F800676C11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		484AA4392934A0F800676C11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		484AA43B2934A0F800676C11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		484AA43E2934A0F800676C11 /* aware-client.storyboard WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "aware-client.storyboard WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		484AA4442934A0F800676C11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		484AA4462934A0F900676C11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		484AA4512934A0F900676C11 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		484AA4532934A0F900676C11 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		484AA4552934A0F900676C11 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		484AA4572934A0F900676C11 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		484AA4592934A0FB00676C11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		484AA45B2934A0FB00676C11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		484AA45C2934A0FB00676C11 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		484AA46A293719DA00676C11 /* SensorData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorData.swift; sourceTree = "<group>"; };
+		48B4BB152953209F00180BA1 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS9.1.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
+		48B4BB1729532C8900180BA1 /* aware-client.storyboard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "aware-client.storyboard.entitlements"; sourceTree = "<group>"; };
+		48ED732729424ABB00B6EBFE /* aware-client.storyboard WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "aware-client.storyboard WatchKit Extension.entitlements"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		484AA4272934A0F300676C11 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		484AA4492934A0F900676C11 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48B4BB162953209F00180BA1 /* HealthKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		484AA4212934A0F200676C11 = {
+			isa = PBXGroup;
+			children = (
+				484AA42C2934A0F300676C11 /* aware-client.storyboard */,
+				484AA4422934A0F800676C11 /* aware-client.storyboard WatchKit App */,
+				484AA4502934A0F900676C11 /* aware-client.storyboard WatchKit Extension */,
+				484AA42B2934A0F300676C11 /* Products */,
+				48ED732829424ABB00B6EBFE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		484AA42B2934A0F300676C11 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				484AA42A2934A0F300676C11 /* aware-client.storyboard.app */,
+				484AA43E2934A0F800676C11 /* aware-client.storyboard WatchKit App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		484AA42C2934A0F300676C11 /* aware-client.storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				48B4BB1729532C8900180BA1 /* aware-client.storyboard.entitlements */,
+				484AA42D2934A0F300676C11 /* AppDelegate.swift */,
+				484AA42F2934A0F300676C11 /* SceneDelegate.swift */,
+				484AA4312934A0F300676C11 /* ViewController.swift */,
+				484AA4332934A0F300676C11 /* Main.storyboard */,
+				484AA4362934A0F800676C11 /* Assets.xcassets */,
+				484AA4382934A0F800676C11 /* LaunchScreen.storyboard */,
+				484AA43B2934A0F800676C11 /* Info.plist */,
+			);
+			path = "aware-client.storyboard";
+			sourceTree = "<group>";
+		};
+		484AA4422934A0F800676C11 /* aware-client.storyboard WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				484AA4432934A0F800676C11 /* Interface.storyboard */,
+				484AA4462934A0F900676C11 /* Assets.xcassets */,
+			);
+			path = "aware-client.storyboard WatchKit App";
+			sourceTree = "<group>";
+		};
+		484AA4502934A0F900676C11 /* aware-client.storyboard WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				48ED732729424ABB00B6EBFE /* aware-client.storyboard WatchKit Extension.entitlements */,
+				484AA4512934A0F900676C11 /* InterfaceController.swift */,
+				482FC41B2944B3A60072A001 /* PracticeController.swift */,
+				484AA46A293719DA00676C11 /* SensorData.swift */,
+				484AA4532934A0F900676C11 /* ExtensionDelegate.swift */,
+				484AA4552934A0F900676C11 /* NotificationController.swift */,
+				484AA4572934A0F900676C11 /* ComplicationController.swift */,
+				484AA4592934A0FB00676C11 /* Assets.xcassets */,
+				484AA45B2934A0FB00676C11 /* Info.plist */,
+				484AA45C2934A0FB00676C11 /* PushNotificationPayload.apns */,
+			);
+			path = "aware-client.storyboard WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		48ED732829424ABB00B6EBFE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				48B4BB152953209F00180BA1 /* HealthKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		484AA4292934A0F300676C11 /* aware-client.storyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 484AA4672934A0FB00676C11 /* Build configuration list for PBXNativeTarget "aware-client.storyboard" */;
+			buildPhases = (
+				484AA4262934A0F300676C11 /* Sources */,
+				484AA4272934A0F300676C11 /* Frameworks */,
+				484AA4282934A0F300676C11 /* Resources */,
+				484AA4662934A0FB00676C11 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				484AA4412934A0F800676C11 /* PBXTargetDependency */,
+			);
+			name = "aware-client.storyboard";
+			productName = "aware-client.storyboard";
+			productReference = 484AA42A2934A0F300676C11 /* aware-client.storyboard.app */;
+			productType = "com.apple.product-type.application";
+		};
+		484AA43D2934A0F800676C11 /* aware-client.storyboard WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 484AA4632934A0FB00676C11 /* Build configuration list for PBXNativeTarget "aware-client.storyboard WatchKit App" */;
+			buildPhases = (
+				484AA43C2934A0F800676C11 /* Resources */,
+				484AA4482934A0F900676C11 /* Sources */,
+				484AA4492934A0F900676C11 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "aware-client.storyboard WatchKit App";
+			productName = "aware-client.storyboard WatchKit App";
+			productReference = 484AA43E2934A0F800676C11 /* aware-client.storyboard WatchKit App.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		484AA4222934A0F200676C11 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					484AA4292934A0F300676C11 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					484AA43D2934A0F800676C11 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 484AA4252934A0F200676C11 /* Build configuration list for PBXProject "aware-client.storyboard" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 484AA4212934A0F200676C11;
+			productRefGroup = 484AA42B2934A0F300676C11 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				484AA4292934A0F300676C11 /* aware-client.storyboard */,
+				484AA43D2934A0F800676C11 /* aware-client.storyboard WatchKit App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		484AA4282934A0F300676C11 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				484AA43A2934A0F800676C11 /* LaunchScreen.storyboard in Resources */,
+				484AA4372934A0F800676C11 /* Assets.xcassets in Resources */,
+				48B4BB1929532CEA00180BA1 /* aware-client.storyboard WatchKit App.app in Resources */,
+				484AA4352934A0F300676C11 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		484AA43C2934A0F800676C11 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				484AA4472934A0F900676C11 /* Assets.xcassets in Resources */,
+				484AA45A2934A0FB00676C11 /* Assets.xcassets in Resources */,
+				484AA4452934A0F800676C11 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		484AA4262934A0F300676C11 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				484AA4322934A0F300676C11 /* ViewController.swift in Sources */,
+				484AA42E2934A0F300676C11 /* AppDelegate.swift in Sources */,
+				484AA4302934A0F300676C11 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		484AA4482934A0F900676C11 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				484AA4562934A0F900676C11 /* NotificationController.swift in Sources */,
+				484AA4582934A0F900676C11 /* ComplicationController.swift in Sources */,
+				482FC41C2944B3A60072A001 /* PracticeController.swift in Sources */,
+				484AA4542934A0F900676C11 /* ExtensionDelegate.swift in Sources */,
+				484AA46B293719DA00676C11 /* SensorData.swift in Sources */,
+				484AA4522934A0F900676C11 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		484AA4412934A0F800676C11 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 484AA43D2934A0F800676C11 /* aware-client.storyboard WatchKit App */;
+			targetProxy = 484AA4402934A0F800676C11 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		484AA4332934A0F300676C11 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				484AA4342934A0F300676C11 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		484AA4382934A0F800676C11 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				484AA4392934A0F800676C11 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		484AA4432934A0F800676C11 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				484AA4442934A0F800676C11 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		484AA45D2934A0FB00676C11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		484AA45E2934A0FB00676C11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		484AA4642934A0FB00676C11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "aware-client.storyboard WatchKit Extension/aware-client.storyboard WatchKit Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 236456UV4F;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "aware-client.storyboard WatchKit App";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "access Health Data";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "access Health Data";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "morit.aware-client-storyboard";
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "morit.aware-client-storyboard.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Debug;
+		};
+		484AA4652934A0FB00676C11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "aware-client.storyboard WatchKit Extension/aware-client.storyboard WatchKit Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 236456UV4F;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "aware-client.storyboard WatchKit App";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "access Health Data";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "access Health Data";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "morit.aware-client-storyboard";
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "morit.aware-client-storyboard.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Release;
+		};
+		484AA4682934A0FB00676C11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "aware-client.storyboard/aware-client.storyboard.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 236456UV4F;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "aware-client.storyboard/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "morit.aware-client-storyboard";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		484AA4692934A0FB00676C11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "aware-client.storyboard/aware-client.storyboard.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 236456UV4F;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "aware-client.storyboard/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "morit.aware-client-storyboard";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		484AA4252934A0F200676C11 /* Build configuration list for PBXProject "aware-client.storyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				484AA45D2934A0FB00676C11 /* Debug */,
+				484AA45E2934A0FB00676C11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		484AA4632934A0FB00676C11 /* Build configuration list for PBXNativeTarget "aware-client.storyboard WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				484AA4642934A0FB00676C11 /* Debug */,
+				484AA4652934A0FB00676C11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		484AA4672934A0FB00676C11 /* Build configuration list for PBXNativeTarget "aware-client.storyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				484AA4682934A0FB00676C11 /* Debug */,
+				484AA4692934A0FB00676C11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 484AA4222934A0F200676C11 /* Project object */;
+}
